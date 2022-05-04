@@ -13,7 +13,10 @@
 			<!-- Navigation -->
 			<nav class="navbar">
 				<div class="navbar__logo">
-					<h1>&#60;Lesley_van_Delft /&#62;</h1>
+					<h1>
+						<span class="accent">&#60;</span> Lesley_van_Delft
+						<span class="accent">/&#62;</span>
+					</h1>
 				</div>
 
 				<div class="navbar__hamburger" id="hamburger" onclick="toggleMenu()">
@@ -23,6 +26,7 @@
 				</div>
 
 				<nav class="navbar__menu" id="navMenu">
+					<span class="test"></span>
 					<ul class="navbar__menu--list">
 						<li><a href="#">About Me</a></li>
 						<li><a href="#">Projects</a></li>
@@ -30,7 +34,24 @@
 					</ul>
 				</nav>
 			</nav>
+
+			<!-- Landing page -->
+			<section class="landing">
+				<p class="landing__text">
+					Hello, my name is Lesley.<br />
+					I am a junior
+					<span class="yellowAccent">front end developer</span> and I love
+					making beautiful websites.
+				</p>
+
+				<button class="btn btn-primary btn-about">About me &#8595;</button>
+			</section>
+
+			<!-- About section -->
+			<section class="about"></section>
 		</main>
+		<script src="anime.min.js"></script>
 		<script src="app.js"></script>
+		<!-- <script src="anime.min.js" type="module"></script> -->
 	</body>
 </html>
