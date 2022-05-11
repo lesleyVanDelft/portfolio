@@ -4,17 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/2d572306e2.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico" />
 		<link rel="stylesheet" href="styles.css" />
 		<title>Lesley van Delft | Front End Developer</title>
 	</head>
 	<body>
-		<main class="container">
+		<main class="container" id="container">
 			<!-- Navigation -->
-			<nav class="navbar">
-				<div class="navbar__logo">
+			<nav class="navbar" id="navbar">
+				<div class="navbar__logo" id="logo">
 					<h1>
-						<span class="accent">&#60;</span> Lesley_van_Delft
+						<span class="accent">&#60;</span>Lesley_van_Delft
 						<span class="accent">/&#62;</span>
 					</h1>
 				</div>
@@ -27,28 +31,41 @@
 
 				<nav class="navbar__menu" id="navMenu">
 					<span class="test"></span>
-					<ul class="navbar__menu--list">
-						<li><a href="#">About Me</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Contact</a></li>
+					<ul class="navbar__menu--list" id="navList">
+						<li id="listAbout"><a href="#about">About Me</a></li>
+						<li id="listProjects"><a href="#projects">Projects</a></li>
+						<li id="listContact"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</nav>
 
 			<!-- Landing page -->
 			<section class="landing">
-				<p class="landing__text">
-					Hello, my name is Lesley.<br />
-					I am a junior
-					<span class="yellowAccent">front end developer</span> and I love
-					making beautiful websites.
-				</p>
-
-				<button class="btn btn-primary btn-about">About me &#8595;</button>
+				<div class="landing__content">
+					<div class="landing__text">
+						<p>Hello, my name is Lesley.</p>
+						<p>
+							I am a junior
+							<span class="yellowAccent">front end developer</span> and I love
+							making beautiful websites.
+						</p>
+					</div>
+					<button class="btn btn-primary btn-about" id="aboutBtn">
+						About me &#8595;
+					</button>
+				</div>
 			</section>
 
 			<!-- About section -->
-			<section class="about"></section>
+			<section class="about" id="about"></section>
+			<!-- About section -->
+			<section class="projects" id="projects"></section>
+			<!-- About section -->
+			<section class="contact" id="contact"></section>
+			<!-- MOBILE - Arrow to top -->
+			<button class="scrollToTop" id="scrollToTop">
+				<i class="fa-solid fa-circle-arrow-up"></i>
+			</button>
 		</main>
 		<script src="anime.min.js"></script>
 		<script src="app.js"></script>
