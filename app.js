@@ -30,6 +30,10 @@ container.addEventListener('scroll', () => {
 topScrollBtn.addEventListener('click', () => {
 	container.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
+	// document.location.href = document.location.href.replace(
+	// 	/(#)[0-9A-Za-z-]+/gi,
+	// 	''
+	// );
 });
 // logo click to top
 logo.addEventListener('click', () => {

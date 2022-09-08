@@ -1,20 +1,14 @@
 .navbar {
 	width: 100%;
-	// height: fit-content;
 	background-color: none;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-	// padding: 1rem;
-	// padding-right: 2rem;
-	// padding-top: 2rem;
 	padding: 2rem;
-	// padding-left: 1rem;
 	opacity: 0;
 	position: fixed;
 	top: 0;
-	// background: transparent;
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
 		0deg,
@@ -71,7 +65,7 @@
 			span {
 				&:nth-child(1) {
 					transform-origin: left center;
-					transform: translateY(0px) translateX(2px) rotate(45deg);
+					transform: translateY(0px) translateX(3px) rotate(45deg);
 					background-color: $black;
 					width: 100%;
 				}
@@ -84,7 +78,7 @@
 				&:nth-child(3) {
 					transform-origin: left center;
 					width: 100%;
-					transform: translateY(4px) translateX(2px) rotate(-45deg);
+					transform: translateY(3px) translateX(2px) rotate(-45deg);
 					background-color: $black;
 				}
 			}
@@ -95,8 +89,8 @@
 		position: absolute;
 		transition: all 0.3s ease-in-out;
 		color: black;
-		width: 200vw;
-		height: 200vw;
+		width: 150vw;
+		height: 150vw;
 		// width: 750px;
 		// height: 750px;
 		transform: scale(0);
@@ -104,6 +98,7 @@
 		// top: -300px;
 		opacity: 0;
 		background-color: $main-yellow-1;
+
 		font-weight: bold;
 		display: flex;
 		justify-content: flex-start;
@@ -112,6 +107,10 @@
 		z-index: 99;
 		padding-bottom: 25%;
 		padding-left: 40%;
+		// animation: bounce-in 0.6s ease;
+		animation: boxshadowPulse 1s infinite;
+		// top: -225%;
+		// right: -60%;
 
 		span.test {
 			width: 5px;
@@ -124,26 +123,40 @@
 		&.active {
 			// padding: 0;
 			// margin: 0;
-
+			// top: -225%;
+			// right: -60%;
+			// right: -225%;
 			opacity: 1;
 			animation: bounce-in 0.6s ease;
+			animation: boxshadowPulse 6s infinite;
 			transform: scale(1);
+			box-shadow: 0px 0px 44px 0px #ffd50d;
+			margin-top: 10rem;
 		}
 		&--list {
 			list-style: none;
 			width: fit-content;
-			height: 40%;
+			height: 45%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;
 			z-index: 100;
+			font-family: $font-menu;
 
 			li {
-				font-size: 2rem;
+				font-size: 1.26rem;
+				font-weight: 300;
 				opacity: 0;
 				transition: all 0.3s ease-in-out;
 				// transform: translateX(-50px);
+				// font-style: italic;
+				a {
+					font-size: 1.6rem;
+					font-weight: 400;
+					font-style: normal;
+					letter-spacing: 1px;
+				}
 			}
 		}
 	}
@@ -187,5 +200,11 @@
 	100% {
 		opacity: 1;
 		transform: scale(1);
+	}
+}
+
+@keyframes boxshadowPulse {
+	50% {
+		box-shadow: 0px 0px 100px 0px #ffd50d;
 	}
 }

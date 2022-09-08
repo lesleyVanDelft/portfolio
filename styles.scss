@@ -40,6 +40,20 @@ main.container {
 	scroll-behavior: smooth;
 }
 
+section {
+	.sectionHeader {
+		font-family: $font-main;
+		font-weight: lighter;
+		font-size: 2.3rem;
+		padding-top: 2rem;
+		&__number {
+			font-family: $font-menu;
+			font-size: 1.3rem;
+			color: $main-yellow-1;
+		}
+	}
+}
+
 // MOBILE scroll to top arrow button
 .scrollToTop {
 	position: absolute;

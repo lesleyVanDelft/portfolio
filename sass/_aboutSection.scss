@@ -1,9 +1,21 @@
 .about {
-	// height: calc(var(--vh, 1vh) * 100);
 	height: 100vh;
-	// background-color: #121711;
-	// background: linear-gradient(#090c09, #9198e5);
 	background: hsl(110, 15%, 8%);
-	// background: teal;
 	border-top: 1px solid rgba(255, 255, 255, 0.507);
+	padding: 0 1.5rem;
+	padding-top: 5rem;
+
+	h2 {
+		padding-bottom: 2.2rem;
+	}
+	&__content {
+		font-size: 1.35rem;
+		padding-top: 1rem;
+		letter-spacing: 0.5px;
+		line-height: 1.3;
+
+		p:first-child {
+			padding-bottom: 1.5rem;
+		}
+	}
 }
