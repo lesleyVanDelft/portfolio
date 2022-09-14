@@ -3,3 +3,19 @@
 	padding-top: 2rem;
 	padding-bottom: 3rem;
 }
+
+@mixin section-before {
+	content: '';
+	position: absolute;
+	top: -75px;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	z-index: 49;
+}
