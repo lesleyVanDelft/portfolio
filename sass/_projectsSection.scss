@@ -23,4 +23,8 @@
 		// );
 		@include b.section-before;
 	}
+
+	img {
+		max-width: 350px;
+	}
 }
