@@ -30,11 +30,8 @@ container.addEventListener('scroll', () => {
 topScrollBtn.addEventListener('click', () => {
 	container.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
-	// document.location.href = document.location.href.replace(
-	// 	/(#)[0-9A-Za-z-]+/gi,
-	// 	''
-	// );
 });
+
 // logo click to top
 logo.addEventListener('click', () => {
 	container.scrollTop = 0;
@@ -128,3 +125,36 @@ animateTimeline
 		opacity: 1,
 		duration: 450,
 	});
+
+//
+//
+//
+// circle SVG animation
+// let progressCircle = document.querySelector('.progress');
+// let radius = progressCircle.r.baseVal.value;
+
+// let circumference = radius * 2 * Math.PI;
+
+// progressCircle.style.strokeDasharray = circumference;
+
+// const setProgress = percent => {
+// 	progressCircle.style.strokeDashoffset =
+// 		circumference - (percent / 100) * circumference;
+// };
+
+// // setProgress(90);
+
+// window.onload = () => {
+// 	let progressPercentage = 0;
+// 	const stopFunc = num => {
+// 		if (num >= 75) {
+// 			clearInterval(addNum);
+// 		}
+// 	};
+
+// 	addNum = setInterval(() => {
+// 		progressPercentage++;
+// 		setProgress(progressPercentage);
+// 		stopFunc(progressPercentage);
+// 	}, 10);
+// };
